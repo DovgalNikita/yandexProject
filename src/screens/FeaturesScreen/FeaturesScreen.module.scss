@@ -1,4 +1,19 @@
+@font-face {
+    font-family: text-black;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+}
+
 .screen{
     width:100%;
     height:fit-content;
+
+    .title{
+        font-family: text-black;
+        color:#21201F;
+        line-height: 100%;
+        letter-spacing: -1.12px;
+        font-size:56px;
+        width:827px;
+        margin-left:262px;
+    }
 }
