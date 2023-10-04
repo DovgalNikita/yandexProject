@@ -1,0 +1,9 @@
+.screen{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:804px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), linear-gradient(90deg, rgba(255,92,77,0.22) 0%, rgba(235,70,159,0.22) 25%, rgba(131,65,239,0.22) 72%, rgba(63,104,249,0.22) 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
