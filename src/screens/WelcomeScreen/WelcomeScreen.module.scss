@@ -1,9 +1,100 @@
+@font-face {
+    font-family: text-black;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+}
+@font-face {
+    font-family: text-medium;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+}
+$fontColor-black:#21201F;
+
 .screen{
+    position: relative;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width:100%;
     height:804px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), linear-gradient(90deg, rgba(255,92,77,0.22) 0%, rgba(235,70,159,0.22) 25%, rgba(131,65,239,0.22) 72%, rgba(63,104,249,0.22) 100%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+
+    .contentBlock{
+        display: flex;
+        flex-direction: column;
+        margin-left:262px;
+        margin-top:124.94px;
+        z-index: 1;
+
+
+        .title{
+            font-family: text-black;
+            color: $fontColor-black;
+            font-size:72px;
+            letter-spacing: -1.44px;
+            line-height: 100%;
+            width:420px;
+            font-style: normal;
+            margin-top:72px;
+        }
+
+        .caption{
+            width:fit-content;
+            font-size:24px;
+            color: $fontColor-black;
+            font-family: text-medium;
+            line-height:130%;
+            width:465px;
+            height:79px;
+            margin-top:48px;
+
+                .curPrice{
+                    position: relative;
+                    background: radial-gradient(100% 100% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%),
+                    linear-gradient(0deg, rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.63));
+                    padding:4px 12px;
+                    line-height: 100%;
+                    border-radius:500px;
+                    z-index:1;
+
+                    .prevPrice{
+                        display:block;
+                        position: absolute;
+                        top:0;
+                        right:-50px;
+                        padding:10px 12px 10px 50px;
+                        border-radius: 500px;
+                        font-size:16px;
+                        line-height: 100%;
+                        text-decoration: line-through;
+                        z-index:0;
+                        background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+                    }
+                }
+        }
+    }
+
+    .illustrationBlock{
+        position:relative;
+        top:120px;
+        left:-165px;
+
+        .img{
+            // background-color: blue;
+        }
+
+        @keyframes circleTextAnimation{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+        .circleText{
+            position: absolute;
+            top:280px;
+            left:205px;
+            animation: circleTextAnimation 15s linear infinite;
+        }
+    }
 }

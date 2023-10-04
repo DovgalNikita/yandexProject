@@ -1,0 +1,23 @@
+@font-face {
+    font-family: text-medium;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+}
+
+.button{
+    width:fit-content;
+    height:fit-content;
+    color: #21201F;
+    font-family: text-medium;
+    font-size:24px;
+    line-height:100%;
+    border-radius: 36px;
+    background: #FFDE40;
+    box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+    border:0;
+    padding:24px 48px;
+    cursor:pointer;
+
+    &:hover{
+        background-color:rgba(242,215,0);
+    }
+}
