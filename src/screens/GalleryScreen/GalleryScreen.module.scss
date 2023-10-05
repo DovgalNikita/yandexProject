@@ -20,6 +20,13 @@
         font-size:48px;
         width:827px;
         margin-left:262px;
+        transition: .5s;
+        opacity:0;
+
+        &.active{
+            transition: .5s;
+            opacity:1;
+        }
     }
 
     .caption{

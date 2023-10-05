@@ -1,0 +1,39 @@
+.block{
+    display: flex;
+    background-color: red;
+    width:fit-content;
+    height:fit-content;
+    margin-left:231.49px;
+    margin-top:70.21px;
+    width: 934px;
+    position: relative;
+    transition: .5s;
+    opacity:0;
+
+    .column{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        .img{
+            width:456px;
+            height:456px;
+            transform: rotate(2deg);
+    
+            &:first-child{
+                margin-bottom:25px;
+                margin-left:17.75px;
+            }
+        }
+
+        &:last-child{
+            right:-25px;
+            top: -210.64px;
+        }
+    }
+
+    &.active{
+        transition: .5s;
+        opacity:1;
+    }
+}

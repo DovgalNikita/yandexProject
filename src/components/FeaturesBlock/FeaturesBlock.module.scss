@@ -6,6 +6,8 @@
     width: 874px;
     height:fit-content;
     margin-left:262px;
+    transition: .5s;
+    opacity:0;
 
     .row{
         display: flex;
@@ -17,5 +19,10 @@
         &:first-child{
             margin-top:48px;
         }
+    }
+
+    &.active{
+        transition: .5s;
+        opacity:1;
     }
 }
