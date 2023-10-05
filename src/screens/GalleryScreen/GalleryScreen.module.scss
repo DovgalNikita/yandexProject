@@ -35,5 +35,12 @@
         line-height: 120%;
         width:442px;
         margin:48px 0 0 262px;
+        opacity:0;
+        transition: .5s;
+
+        &.active{
+            opacity:1;
+            transition: .5s;
+        }
     }
 }

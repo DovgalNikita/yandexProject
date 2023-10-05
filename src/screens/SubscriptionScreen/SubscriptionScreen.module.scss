@@ -1,0 +1,70 @@
+@font-face {
+    font-family: text-black;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+}
+@font-face {
+    font-family: text-medium;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+}
+
+.block{
+    display: flex;
+    width:100%;
+    height:fit-content;
+    margin-top:104.48px;
+
+
+    .textBlock{
+        width:407px;
+        height:fit-content;
+        color:#21201F;
+        margin-left:260px;
+
+        .title{
+            font-size:48px;
+            font-family: text-black;
+            letter-spacing: -0.96px;
+            line-height:100%;
+        }
+
+        .caption{
+            margin-top:48px;
+            font-size:24px;
+            font-family: text-medium;
+            width:419px;
+        }
+    }
+
+    .imgBlock{
+        width:fit-content;
+        height: fit-content;
+        position: relative;
+        margin-left:165px;
+
+
+        .scooterSubscription{
+            position: absolute;
+            z-index:1;
+        }
+
+        .plusIcon{
+            position: absolute;
+            top:90px;
+            left:-50px;
+            z-index:2;
+        }
+
+        .shadow{
+            position: absolute;
+            width: 412.783px;
+            height: 369.042px;
+            transform: rotate(-140.03deg);
+            border-radius: 412.783px;
+            opacity: 0.29;
+            background: #8241EF;
+            filter: blur(100px);
+            left:150px;
+            top:0px;
+        }
+    }
+}

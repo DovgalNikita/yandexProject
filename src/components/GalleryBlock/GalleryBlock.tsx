@@ -10,6 +10,7 @@ import classNames from 'classnames'
 const GalleryBlock : FC = () => {
 
     const GalleryVisible_block = useAppSelector(state=>state.visibleSlice.GalleryVisible_block);
+    const GalleryTransform_block = useAppSelector(state=>state.transformSlice.GalleryTransform_block);
 
     return(
         GalleryVisible_block
