@@ -1,0 +1,3 @@
+interface IGalleryIcon{
+    img:string;
+}

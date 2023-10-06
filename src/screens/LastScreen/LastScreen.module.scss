@@ -1,0 +1,125 @@
+@font-face {
+    font-family: text-black;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+}
+@font-face {
+    font-family: text-medium;
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+}
+
+
+.screen{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+    height:fit-content;
+    margin-top: 128px;
+
+    .imgBlock{
+        width:400px;
+        height:387px;
+        position:relative;
+        left:205px;
+        opacity:0;
+        transition: .5s;
+
+        &.active{
+            opacity:1;
+            transition: .5s;
+        }
+
+        .scooterLastScreen{
+            position: absolute;
+            width:fit-content;
+            height:fit-content;
+            left:calc(50% - 95px);
+            top:calc(50% - 115px);
+            z-index:1;
+        }
+
+        @keyframes circleTextAnimation{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+        .LastScreenCircleText{
+            position: absolute;
+            animation: circleTextAnimation 45s linear infinite;
+            z-index:1;
+        }
+
+        .shadow{
+            width: 412.783px;
+            height: 369.042px;
+            transform: rotate(-140.03deg);
+            border-radius: 412.783px;
+            opacity: 0.29;
+            background: #8241EF;
+            filter: blur(100px);
+        }
+
+    }
+
+    .textBlock{
+        position: relative;
+        width:407px;
+        height:fit-content;
+        color:#21201F;
+        left:330px;
+
+        .title{
+            font-family: text-black;
+            width:407px;
+            font-size:48px;
+            line-height: 100%; /* 48px */
+            letter-spacing: -0.96px;
+            opacity:0;
+            transition: .5s;
+
+            &.active{
+                opacity:1;
+                transition: .5s;
+            }
+        }
+
+        .caption{
+            width:407px;
+            font-family: text-medium;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%; /* 28.8px */
+            margin-top:48px;
+            opacity:0;
+            transition: .5s;
+
+            &.active{
+                opacity:1;
+                transition: .5s;
+            }
+        }
+
+        .button{
+            width:100%;
+            height:100%;
+            opacity:0;
+            transition: .5s;
+
+            &.active{
+                opacity:1;
+                transition: .5s;
+            }
+        }
+    }
+
+    .footerCaption{
+        position: relative;
+        left:0;
+        top:200px;
+    }
+
+}

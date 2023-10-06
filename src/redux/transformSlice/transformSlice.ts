@@ -1,11 +1,11 @@
 import {createSlice,PayloadAction} from '@reduxjs/toolkit';
 
 interface IInitialState {
-    GalleryTransform_block: boolean
+    GalleryTransform_block: boolean,
 }
 
 const initialState: IInitialState = {
-    GalleryTransform_block: false
+    GalleryTransform_block: false,
 }
 
 export const transformSlice = createSlice({

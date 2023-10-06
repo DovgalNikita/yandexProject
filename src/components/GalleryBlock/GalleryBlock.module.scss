@@ -9,7 +9,7 @@
     opacity:0;
 
     .column{
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
 
@@ -27,6 +27,46 @@
         &:last-child{
             right:-25px;
             top: -210.64px;
+        }
+
+        .palkiIcon{
+            position:absolute;
+            right:-260px;
+            top:-155px;
+            opacity:0;
+            transition: .5s;
+
+            &.active{
+                right:-160px;
+                opacity:1;
+                transition: .5s;
+            }
+        }
+        .geoIcon{
+            position:absolute;
+            top:-135px;
+            left:-340px;
+            opacity:0;
+            transition: .5s;
+
+            &.active{
+                left:-240px;
+                opacity:1;
+                transition: .5s;
+            }
+        }
+        .coffeIcon{
+            position:absolute;
+            bottom:-370px;
+            right:-340px;
+            opacity:0;
+            transition: .5s;
+
+            &.active{
+                right:-240px;
+                opacity:1;
+                transition: .5s;
+            }
         }
     }
 
