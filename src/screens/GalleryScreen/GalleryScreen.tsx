@@ -13,19 +13,12 @@ const GalleryScreen = () => {
 
     return(
         <div className={styles.screen}>
-            {GalleryVisible_title ? <div className={classnames(styles.title,styles.active)}>Эксклюзивный доступ к событиям Самокатов</div> : <div className={styles.title}>Эксклюзивный доступ к событиям Самокатов</div>}
-            {GalleryVisible_caption
-                ?<p className={classNames(styles.caption,styles.active)}>
-                    С абонементом — у вас доступ <br />к специальным мероприятиям, <br />скидки и классный мерч. 
-                    В 2023 году <br /> мы танцевали на Даче Плюс <br /> с Антохой MC, катались на самокатах <br />с 
-                    Сергеем Мезенцевым и слушали хор <br />Attaque de Panique
-                </p>
-                :<p className={styles.caption}>
-                    С абонементом — у вас доступ <br />к специальным мероприятиям, <br />скидки и классный мерч. 
-                    В 2023 году <br /> мы танцевали на Даче Плюс <br /> с Антохой MC, катались на самокатах <br />с 
-                    Сергеем Мезенцевым и слушали хор <br />Attaque de Panique
-                </p>
-            }
+            <div className={GalleryVisible_title?classnames(styles.title,styles.active):styles.title}>Эксклюзивный доступ к событиям Самокатов</div>
+            <p className={GalleryVisible_caption?classNames(styles.caption,styles.active):styles.caption}>
+                С абонементом — у вас доступ <br />к специальным мероприятиям, <br />скидки и классный мерч. 
+                В 2023 году <br /> мы танцевали на Даче Плюс <br /> с Антохой MC, катались на самокатах <br />с 
+                Сергеем Мезенцевым и слушали хор <br />Attaque de Panique
+            </p>
             <GalleryBlock />
         </div>
     )

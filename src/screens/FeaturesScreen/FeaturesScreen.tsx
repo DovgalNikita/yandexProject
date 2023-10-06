@@ -11,7 +11,7 @@ const FeaturesScreen = () => {
 
     return(
         <div className={styles.screen}>
-            {FeaturesVisible_title ? <div className={classNames(styles.title,styles.active)}>Вот что даёт участие в клубе</div> : <div className={styles.title}>Вот что даёт участие в клубе</div>}
+            <div className={FeaturesVisible_title?classNames(styles.title,styles.active):styles.title}>Вот что даёт участие в клубе</div>
             <FeaturesBlock />
         </div>
     )

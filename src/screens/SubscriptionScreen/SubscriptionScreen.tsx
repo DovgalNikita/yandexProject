@@ -15,42 +15,18 @@ const SubscriptionScreen: FC = () => {
     return(
         <div className={styles.screen}>
             <div className={styles.textBlock}>
-                {SubcriptionVisible_title
-                    ?<div className={classNames(styles.title,styles.active)}>Купить <br/>абонемент <br/>и вступить <br/>в клуб смогут <br/>те, кто в Плюсе</div>
-                    :<div className={styles.title}>Купить <br/>абонемент <br/>и вступить <br/>в клуб смогут <br/>те, кто в Плюсе</div>
-                }
-                {
-                    SubcriptionVisible_caption
-                        ?<div className={classNames(styles.caption,styles.active)}>
-                            За каждую поездку на самокатах <br/>такие пользователи получают <br/>кешбэк баллами. Баллы можно <br/>тратить на поездки
-                            на самокатах <br/>и такси с Яндекс Go, покупки <br/>и заказы в других сервисах Яндекса
-                        </div>
-                        :
-                        <div className={styles.caption}>
-                            За каждую поездку на самокатах <br/>такие пользователи получают <br/>кешбэк баллами. Баллы можно <br/>тратить на поездки
-                            на самокатах <br/>и такси с Яндекс Go, покупки <br/>и заказы в других сервисах Яндекса
-                        </div>
-                }
-                
+                <div className={SubcriptionVisible_title?classNames(styles.title,styles.active):styles.title}>Купить <br/>абонемент <br/>и вступить <br/>в клуб смогут <br/>те, кто в Плюсе</div>
+                <div className={SubcriptionVisible_caption?classNames(styles.caption,styles.active):styles.caption}>
+                    За каждую поездку на самокатах <br/>такие пользователи получают <br/>кешбэк баллами. Баллы можно <br/>тратить на поездки
+                    на самокатах <br/>и такси с Яндекс Go, покупки <br/>и заказы в других сервисах Яндекса
+                </div>
             </div>
-            {
-                SubcriptionVisible_block
-                    ?<div className={classNames(styles.imgBlock,styles.active)}>
-                        <img src={scooterSubscription} className={styles.scooterSubscription} alt="scooterSubscription" />
-                        {
-                            SubcriptionVisible_iconPlus
-                                ?<img src={plusIcon} className={classNames(styles.plusIcon,styles.active)} alt="plusIcon"/>
-                                :<img src={plusIcon} className={styles.plusIcon} alt="plusIcon"/>
-                        }
-                        <div className={styles.shadow}></div>
-                    </div>
-                    :<div className={styles.imgBlock}>
-                        <img src={scooterSubscription} className={styles.scooterSubscription} alt="scooterSubscription" />
-                        <img src={plusIcon} className={styles.plusIcon} alt="plusIcon" />
-                        <div className={styles.shadow}></div>
-                    </div>
-                
-            }
+
+            <div className={SubcriptionVisible_block?classNames(styles.imgBlock,styles.active):styles.imgBlock}>
+                <img src={scooterSubscription} className={styles.scooterSubscription} alt="scooterSubscription" />
+                <img src={plusIcon} className={SubcriptionVisible_iconPlus?classNames(styles.plusIcon,styles.active):styles.plusIcon} alt="plusIcon"/>
+                <div className={styles.shadow}></div>
+            </div>
             
         </div>
     )
