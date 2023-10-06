@@ -1,9 +1,11 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import visibleSlice from "./visibleSlice/visibleSlice";
 import transformSlice from "./transformSlice/transformSlice";
+import visibleSliceValues from "./visibleSlice/visibleSliceValues";
 
 const rootReducer = combineReducers({
     visibleSlice,
+    visibleSliceValues,
     transformSlice
 });
 
