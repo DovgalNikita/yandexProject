@@ -3,11 +3,22 @@ import styles from './LastScreen.module.scss';
 import React, {FC, useRef,useEffect} from 'react';
 import scooterLastScreen from '../../assets/images/scooterLastScreen.png';
 import LastScreenCircleText from '../../assets/images/LastScreenCircleText.png';
-import { useAppSelector } from '../../redux/hooks';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
 import classNames from 'classnames';
+import { setLastScreenVisibleValue_block, setLastScreenVisibleValue_button, setLastScreenVisibleValue_caption, setLastScreenVisibleValue_title } from '../../redux/visibleSlice/visibleSliceValues';
 
 const LastScreen: FC = () => {
 
+    const dispatch = useAppDispatch();
+    
+    const block = useRef() as React.MutableRefObject<HTMLDivElement>;
+    
+    useEffect(()=>{
+        dispatch(setLastScreenVisibleValue_block(block.current.offsetTop - window.innerHeight/1.25));
+        dispatch(setLastScreenVisibleValue_title(block.current.offsetTop - window.innerHeight/1.25));
+        dispatch(setLastScreenVisibleValue_caption(block.current.offsetTop - window.innerHeight/1.6));
+        dispatch(setLastScreenVisibleValue_button(block.current.offsetTop - window.innerHeight/2));
+    },[]);
 
     const LastScreenVisible_block = useAppSelector(state=>state.visibleSlice.LastScreenVisible_block);
     const LastScreenVisible_title = useAppSelector(state=>state.visibleSlice.LastScreenVisible_title);
@@ -17,7 +28,7 @@ const LastScreen: FC = () => {
     return(
         <div className={styles.screen} >
 
-            <div className={LastScreenVisible_block?classNames(styles.imgBlock,styles.active):styles.imgBlock} >
+            <div className={LastScreenVisible_block?classNames(styles.imgBlock,styles.active):styles.imgBlock} ref={block}>
                 <img src={LastScreenCircleText} alt="scooter" className={styles.LastScreenCircleText}/>
                 <img src={scooterLastScreen} alt="scooter" className={styles.scooterLastScreen}/>
                 <div className={styles.shadow} ></div>
