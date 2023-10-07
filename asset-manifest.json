@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d74c09c.css",
+    "main.js": "/static/js/main.f09c22e3.js",
+    "static/media/welcomeScreenImg.png": "/static/media/welcomeScreenImg.f703325b61e6fe49749a.png",
+    "static/media/galleryImgMusician.png": "/static/media/galleryImgMusician.f8900d4f32d7a1ea3cfd.png",
+    "static/media/galleryImgParty.png": "/static/media/galleryImgParty.59c0c1f7883b6da38138.png",
+    "static/media/galleryImgFunnyPeople.png": "/static/media/galleryImgFunnyPeople.69eb6217c5d02f858649.png",
+    "static/media/galleryImgBag.png": "/static/media/galleryImgBag.f4ccc8477ea3655e0b87.png",
+    "static/media/coffeIcon.png": "/static/media/coffeIcon.bfb3696cb00c6240fcc0.png",
+    "static/media/geoIcon.png": "/static/media/geoIcon.add564ed9c99fe8357c9.png",
+    "static/media/scooterSubscription.png": "/static/media/scooterSubscription.66b72dd4246c09bed82a.png",
+    "static/media/palkiIcon.png": "/static/media/palkiIcon.0c637c57a6dfacc6555a.png",
+    "static/media/plusIcon.png": "/static/media/plusIcon.5a1f48e51cba1e8ea8e3.png",
+    "static/media/scooterLastScreen.png": "/static/media/scooterLastScreen.7da14d6894709e8c1ad1.png",
+    "static/media/LastScreenCircleText.png": "/static/media/LastScreenCircleText.d1e9da2641b60627be04.png",
+    "index.html": "/index.html",
+    "main.7d74c09c.css.map": "/static/css/main.7d74c09c.css.map",
+    "main.f09c22e3.js.map": "/static/js/main.f09c22e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d74c09c.css",
+    "static/js/main.f09c22e3.js"
+  ]
+}
