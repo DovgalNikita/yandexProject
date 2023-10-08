@@ -21,7 +21,7 @@
             width:calc(344px * 4);
             height:100%;
             left:0;
-            transition: .5s;
+            transition: .5s ease-in-out;
 
             &>img{
                 width:344px;

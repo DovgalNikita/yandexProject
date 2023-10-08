@@ -22,7 +22,9 @@
     }
 
     @media (max-width:768px) {
+        width:311px;
         font-size:18px;
-        padding:18px 86px;
+        padding:18px auto;
+        
       }
 }
