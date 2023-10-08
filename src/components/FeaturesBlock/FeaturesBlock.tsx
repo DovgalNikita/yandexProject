@@ -25,7 +25,10 @@ const FeaturesBlock: FC = () => {
         <div className={FeaturesVisible_block?classnames(styles.block,styles.active):styles.block} ref={block}>
             <div className={styles.row}>
                 <FeaturesItemShort img={rubleImg}>0 ₽ за старт в каждой поездке</FeaturesItemShort>
-                <FeaturesItemLong img={scooterImg}>Катаетесь с друзьями? Бронируйте до трёх самокатов <br/>с аккаунта с абонементом —<br/> так у всех будет бесплатный старт</FeaturesItemLong>
+                {window.matchMedia('(max-width: 768px)')
+                 ?<FeaturesItemLong img={scooterImg}>Катаетесь с друзьями? Бронируйте до трёх самокатов с аккаунта с абонементом — так у всех будет бесплатный старт</FeaturesItemLong>
+                 :<FeaturesItemLong img={scooterImg}>Катаетесь с друзьями? Бронируйте до трёх самокатов <br/>с аккаунта с абонементом —<br/> так у всех будет бесплатный старт</FeaturesItemLong>
+                }
             </div>
             <div className={styles.row}>
                 <FeaturesItemShort img={timerImg}>Бесплатная пауза 15 минут в поездке — например, чтобы зайти за кофе или передохнуть</FeaturesItemShort>

@@ -11,9 +11,22 @@
     width:362px;
     height:fit-content;
 
+    @media (max-width:768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:311px;
+        margin:12px 0;
+    }
+
     .img{
         width:fit-content;
         height:fit-content;
+
+        @media (max-width:768px) {
+            width:52px;
+            height:47px;
+        }
     }
 
     .caption{
@@ -22,5 +35,11 @@
         line-height: 120%;
         color: #21201F;
         margin-top: 16px;
+
+        @media (max-width:768px) {
+            margin-top:0;
+            width:212px;
+            font-size:16px;
+        }
     }
 }

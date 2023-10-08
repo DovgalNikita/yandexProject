@@ -18,6 +18,14 @@
         opacity:0;
         transition: .5s;
 
+        @media (max-width:768px) {
+            letter-spacing: -0.64px;
+            font-size:32px;
+            width:311px;
+            height:55px;
+            margin-left:32px;
+        }
+
         &.active{
             transition: .5s;
             opacity:1;

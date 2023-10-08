@@ -13,6 +13,10 @@
     height:fit-content;
     margin-top:104.48px;
 
+    
+    @media (max-width:768px) {
+        // display:none;
+    }
 
     .textBlock{
         width:407px;

@@ -9,6 +9,7 @@ import classNames from 'classnames';
 import palkiIcon from '../../assets/images/palkiIcon.png';
 import geoIcon from '../../assets/images/geoIcon.png';
 import coffeIcon from '../../assets/images/coffeIcon.png';
+import GallerySlider from '../GallerySlider/GallerySlider';
 import { 
     setGalleryVisibleValue_block, 
     setGalleryVisibleValue_palkiIcon,
@@ -38,19 +39,22 @@ const GalleryBlock : FC = () => {
     const GalleryVisible_coffeIcon =useAppSelector(state=>state.visibleSlice.GalleryVisible_coffeIcon);
 
     return(
-        <div className={GalleryVisible_block? classNames(styles.block,styles.active):styles.block} ref={block}>
-            <div className={styles.column}>
-                <img src={galleryImgMusician} alt="" className={styles.img}/>
-                <img src={galleryImgBag} alt="" className={styles.img}/>
-                <img src={geoIcon} alt="" className={GalleryVisible_geoIcon?classNames(styles.geoIcon,styles.active):styles.geoIcon} /> : <img src={geoIcon} alt="" className={styles.geoIcon} />
+        <>
+            <div className={GalleryVisible_block? classNames(styles.block,styles.active):styles.block} ref={block}>
+                <div className={styles.column}>
+                    <img src={galleryImgMusician} alt="" className={styles.img}/>
+                    <img src={galleryImgBag} alt="" className={styles.img}/>
+                    <img src={geoIcon} alt="" className={GalleryVisible_geoIcon?classNames(styles.geoIcon,styles.active):styles.geoIcon} /> : <img src={geoIcon} alt="" className={styles.geoIcon} />
+                </div>
+                <div className={styles.column}>
+                    <img src={galleryImgParty} alt="" className={styles.img}/>
+                    <img src={galleryImgFunnyPeople} alt="" className={styles.img}/>
+                    <img src={palkiIcon} alt="" className={GalleryVisible_palkiIcon?classNames(styles.palkiIcon,styles.active):styles.palkiIcon} />
+                    <img src={coffeIcon} alt="" className={GalleryVisible_coffeIcon?classNames(styles.coffeIcon,styles.active):styles.coffeIcon} />
+                </div>
             </div>
-            <div className={styles.column}>
-                <img src={galleryImgParty} alt="" className={styles.img}/>
-                <img src={galleryImgFunnyPeople} alt="" className={styles.img}/>
-                <img src={palkiIcon} alt="" className={GalleryVisible_palkiIcon?classNames(styles.palkiIcon,styles.active):styles.palkiIcon} />
-                <img src={coffeIcon} alt="" className={GalleryVisible_coffeIcon?classNames(styles.coffeIcon,styles.active):styles.coffeIcon} />
-            </div>
-        </div>
+            <GallerySlider />
+        </>
     )
 }
 

@@ -13,6 +13,10 @@
     margin-top:128px;
     color:#21201F;
 
+    @media (max-width:768px) {
+        margin-top:72px;
+    }
+
     .title{
         font-family: text-black;
         line-height: 100%;
@@ -22,6 +26,15 @@
         margin-left:262px;
         transition: .5s;
         opacity:0;
+
+        @media (max-width:768px) {
+            width:311px;
+            font-size: 32px;
+            margin-left:32px;
+            font-size:32px;
+            letter-spacing: -0.64px;
+        }
+
 
         &.active{
             transition: .5s;
@@ -37,6 +50,15 @@
         margin:48px 0 0 262px;
         opacity:0;
         transition: .5s;
+
+        @media (max-width:768px) {
+            display: flex;
+            justify-content: flex-start;
+            width:311px;
+            font-size: 16px;
+            margin-top:32px;
+            margin-left: 32px;
+        }
 
         &.active{
             opacity:1;

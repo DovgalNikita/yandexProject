@@ -1,0 +1,47 @@
+.block{
+    display: none;
+    @media (max-width:768px) {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height:fit-content;
+        width:100%;
+        margin-top:47px;
+    }
+
+    .content{
+        position: relative;
+        width:344px;
+        height:344px;
+        overflow: hidden;
+
+        .vieWindow{
+            position: absolute;
+            width:calc(344px * 4);
+            height:100%;
+            left:0;
+            transition: .5s;
+
+            &>img{
+                width:344px;
+                height:344px;
+            }
+        }
+    }
+
+    .sliderButtons{
+        display: flex;
+        flex-direction: row;
+        margin-top:24px;
+       
+
+        .button{
+            margin:0 6px;
+            &:first-child{
+                transform: scaleX(-1);
+                
+            }
+        }
+    }
+}
