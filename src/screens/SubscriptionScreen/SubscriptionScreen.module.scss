@@ -15,7 +15,7 @@
 
     
     @media (max-width:768px) {
-        // display:none;
+        margin-top:72px;
     }
 
     .textBlock{
@@ -24,6 +24,11 @@
         color:#21201F;
         margin-left:260px;
 
+        @media (max-width:768px) {
+            width:311px;
+            margin-left:32px;
+        }
+
         .title{
             font-size:48px;
             font-family: text-black;
@@ -31,6 +36,12 @@
             line-height:100%;
             opacity:0;
             transition: .5s;
+
+            @media (max-width:768px) {
+                font-size: 32px;
+                letter-spacing: -0.64px;
+                opacity:1;
+            }
 
             &.active{
                 opacity:1;
@@ -46,6 +57,14 @@
             opacity:0;
             transition: .5s;
 
+            @media (max-width:768px) {
+                width: 311px;
+                margin-top:32px;
+                font-size: 16px;
+                line-height: 120%;
+                opacity:1;
+            }
+
             &.active{
                 opacity:1;
                 transition: .5s;
@@ -60,6 +79,10 @@
         margin-left:165px;
         opacity:0;
         transition: .5s;
+
+        @media (max-width:768px) {
+            display: none;
+        }
 
         &.active{
             opacity:1;

@@ -17,7 +17,8 @@
     margin-top: 128px;
 
     @media (max-width:768px) {
-        display:none;
+        flex-direction: column;
+        margin-top:59px;
     }
 
     .imgBlock{
@@ -27,6 +28,13 @@
         left:205px;
         opacity:0;
         transition: .5s;
+
+        @media (max-width:768px) {
+            opacity:1;
+            width: 258px;
+            height: 258px;
+            left:59px;
+        }
 
         &.active{
             opacity:1;
@@ -40,6 +48,13 @@
             left:calc(50% - 95px);
             top:calc(50% - 115px);
             z-index:1;
+
+            @media (max-width:768px) {
+                width: 110px;
+                height: 143px;
+                left:69px;
+                top:50px;
+            }
         }
 
         @keyframes circleTextAnimation{
@@ -54,6 +69,11 @@
             position: absolute;
             animation: circleTextAnimation 45s linear infinite;
             z-index:1;
+
+            @media (max-width:768px) {
+                width: 258px;
+                height: 258px;
+            }
         }
 
         .shadow{
@@ -64,6 +84,14 @@
             opacity: 0.29;
             background: #8241EF;
             filter: blur(100px);
+
+            @media (max-width:768px) {
+                margin-top:80px;
+                margin-left:30px;
+                width: 215.685px;
+                height: 192.829px;
+                filter: blur(52.25131607055664px);
+            }
         }
 
     }
@@ -74,6 +102,13 @@
         height:fit-content;
         color:#21201F;
         left:330px;
+
+
+        @media (max-width:768px) {
+            width:330px;
+            left:32px;
+            margin-top:59px;
+        }
         
 
         .title{
@@ -84,6 +119,13 @@
             letter-spacing: -0.96px;
             opacity:0;
             transition: .5s;
+
+            @media (max-width:768px) {
+                width:311px;
+                font-size: 32px;
+                letter-spacing: -0.64px;
+                opacity:1;
+            }
 
             &.active{
                 opacity:1;
@@ -102,6 +144,12 @@
             opacity:0;
             transition: .5s;
 
+            @media (max-width:768px) {
+                margin-top:32px;
+                opacity:1;
+                font-size: 16px;
+            }
+
             &.active{
                 opacity:1;
                 transition: .5s;
@@ -109,10 +157,18 @@
         }
 
         .button{
-            width:100%;
-            height:100%;
+            width:fit-content;
+            height:fit-content;
             opacity:0;
             transition: .5s;
+            margin-top:48px;
+
+
+            @media (max-width:768px) {
+                margin-top:32px;
+                width:311px;
+                opacity:1;
+            }
 
             &.active{
                 opacity:1;
@@ -121,10 +177,5 @@
         }
     }
 
-    .footerCaption{
-        position: relative;
-        left:0;
-        top:200px;
-    }
 
 }

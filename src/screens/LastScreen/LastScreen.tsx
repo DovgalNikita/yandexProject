@@ -37,7 +37,7 @@ const LastScreen: FC = () => {
             <div className={styles.textBlock} >
                 <div className={LastScreenVisible_title?classNames(styles.title,styles.active):styles.title} >80% наших <br/>пользователей <br/>уже в клубе <br/>и экономят <br/>на поездках</div>
                 <div className={LastScreenVisible_caption?classNames(styles.caption,styles.active):styles.caption} >Присоединяйтесь — опция начнёт <br/>действовать в начале сезона–2024. <br/>Об открытии сезона предупредим <br/>заранее, чтобы вы были готовы</div>
-                <a href="https://go.yandex/ru_ru/lp/rides/scooter" rel="noreferrer" target='_blank' className={LastScreenVisible_button?classNames(styles.button,styles.active):styles.button}><StyledButton margin='48px 0 0'>Хочу абонемент</StyledButton></a>
+                <div className={LastScreenVisible_button?classNames(styles.button,styles.active):styles.button}><a href="https://go.yandex/ru_ru/lp/rides/scooter" rel="noreferrer" target='_blank'><StyledButton>Хочу абонемент</StyledButton></a></div>
             </div>
         </div>
     )

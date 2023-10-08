@@ -95,6 +95,14 @@ $fontColor-black:#21201F;
                 }
                 
         }
+
+        .button{
+            margin-top:44px;
+
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
     }
 
     .illustrationBlock{

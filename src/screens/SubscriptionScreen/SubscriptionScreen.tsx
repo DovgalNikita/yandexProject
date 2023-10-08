@@ -32,6 +32,7 @@ const SubscriptionScreen: FC = () => {
         <div className={styles.screen}>
             <div className={styles.textBlock}>
                 <div ref={title} className={SubcriptionVisible_title?classNames(styles.title,styles.active):styles.title}>Купить <br/>абонемент <br/>и вступить <br/>в клуб смогут <br/>те, кто в Плюсе</div>
+                
                 <div ref={caption} className={SubcriptionVisible_caption?classNames(styles.caption,styles.active):styles.caption}>
                     За каждую поездку на самокатах <br/>такие пользователи получают <br/>кешбэк баллами. Баллы можно <br/>тратить на поездки
                     на самокатах <br/>и такси с Яндекс Go, покупки <br/>и заказы в других сервисах Яндекса
